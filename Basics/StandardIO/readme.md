@@ -143,3 +143,29 @@ System.out.printf("%-10s %10d %10.2f%n", item, quantity, price);
 - `%05d`: Pad an integer with zeros to fill a 5-character width.
 
 These formatting options allow you to control the presentation of text, ensuring consistent alignment and layout.
+
+
+No, `"%n"` and `"\n"` are not exactly the same in Java, though they both introduce a new line. Here’s the difference:
+
+### 1. `"%n"`
+- `"%n"` is a platform-independent newline specifier in `printf` and `String.format`.
+- It automatically converts to the correct line separator for the operating system.
+  - On Windows, it will convert to `\r\n`.
+  - On Unix/Linux/Mac, it will convert to `\n`.
+- It’s recommended for code that will run across different platforms to ensure consistent line breaks.
+
+### 2. `"\n"`
+- `"\n"` is a newline character that explicitly represents a Unix-style newline.
+- It’s not platform-independent. On Windows, `"\n"` might not behave as expected if you need compatibility with Windows-style line breaks (`\r\n`).
+
+### Example
+Here’s a demonstration of the difference:
+
+```java
+System.out.printf("Hello World!%n"); // Platform-independent newline
+System.out.printf("Hello World!\n");  // Unix-style newline
+```
+
+### When to Use Each
+- Use `"%n"` in `printf` or `String.format` for cross-platform compatibility.
+- Use `"\n"` when platform-specific behavior is acceptable (e.g., in Unix-based systems only) or if you're working outside of `printf` and `String.format`.
