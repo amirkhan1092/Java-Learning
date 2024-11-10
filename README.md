@@ -68,9 +68,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-### Tips for Updating
-1. **Add links to each file** as you go, so it’s easy to navigate.
-2. **Summarize your learnings** for each concept to reinforce understanding.
-3. **List new projects** as you complete them, showing how different concepts come together.
-
-This README will help you stay organized and can serve as a useful reference as you progress in your Java learning journey!
