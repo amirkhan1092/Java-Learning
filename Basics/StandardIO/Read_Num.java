@@ -15,6 +15,7 @@ public class Read_Num {
         out = num1 + num2;
         // Method1
         // System.out.printf("Addition of %d and %d is %d\n", num1, num2, out);
+        System.out.printf("Addition of %d%n and %d is %d%n", num1, num2, out);
 
         String s;
         // Method2
@@ -24,7 +25,7 @@ public class Read_Num {
         // s = "Addition of " + num1 + " and " + num2 + " is " + out;
 
         // Method4
-        s = MessageFormat.format("Addition of {0} and {1} is {2}", num1, num2, out);
+        // s = MessageFormat.format("Addition of {0} and {1} is {2}", num1, num2, out);
 
         // Method5
         // s = String.format("""
@@ -34,7 +35,7 @@ public class Read_Num {
 
         // Method6
 
-        System.out.println(s);
+        // System.out.println(s);
 
 
     }
