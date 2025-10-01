@@ -54,3 +54,24 @@ public class PainHouseII {
 }
 
 
+public static void displayUserInfo(String name, int age)
+
+public static void performOperations(int a, int b)
+
+public static String checkEvenOdd(int n)
+
+public static int findLargest(int a, int b, int c)
+
+public static void calculateGrade(int[] marks)
+
+public Employee(int id, String name, double salary)
+public int getId()
+public String getName()
+public double getSalary()
+
+
+
+
+
+
+
